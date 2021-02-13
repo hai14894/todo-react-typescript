@@ -13,9 +13,11 @@ const todos: Array<Todo> = [
 
 const App: React.FC = () => {
   return (
-    <div>
+    <React.Fragment>
       <TodoListItem todo={todos[0]}/>
-    </div>
+      <TodoListItem todo={todos[1]}/>
+      <TodoListItem todo={todos[2]}/>
+    </React.Fragment>
   )
 }
 
